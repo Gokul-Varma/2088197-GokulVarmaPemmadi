@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Calculator02
 {
-    public class CalculatorApp
+    interface IMathLibrary
+    {
+        int Add(int a, int b);
+        int Substract(int a, int b);
+        int Multiply(int a, int b);
+        double Division(double a, double b);
+    }
+    public class CalculatorApp: IMathLibrary
     {
 
         int result;
@@ -26,7 +33,7 @@ namespace Calculator02
             int result= firstNo * secondNo;
             return result;
         }
-        public int Division(double firstNo, double secondNo)
+        public double Division(double firstNo, double secondNo)
         {
             int result = Convert.ToInt32(firstNo / secondNo);
             return result;

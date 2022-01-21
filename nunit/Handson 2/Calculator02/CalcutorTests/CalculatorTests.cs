@@ -116,19 +116,19 @@ namespace CalculatorTests
         }
         public void DivisionTest()
         {
-            int input1 = 10;
-            int input2 = 10;
-            int expected = 1;
-            int actual = calculator.Division(input1, input2);
+            double input1 = 10;
+            double input2 = 10;
+            double expected = 1;
+           double actual = calculator.Division(input1, input2);
             Assert.AreEqual(expected, actual);
         }
         [Test]
         [TestCase(8, 4, 2)]
         [TestCase(10, 5, 2)]
         [TestCase(15, 3, 5)]
-        public void DivisionTest1(int input1, int input2, int expected)
+        public void DivisionTest1(double input1, double input2, double expected)
         {
-            int actual = calculator.Division(input1, input2);
+            double actual = calculator.Division(input1, input2);
             Assert.AreEqual(expected, actual);
         }
 
