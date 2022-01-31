@@ -1,0 +1,14 @@
+﻿@model EmployeePartialView.Models.Employee
+@{
+    ViewData["Title"] = "EmployeePartialView";
+}
+
+<tr>
+    <td>
+        @Html.DisplayFor(modelitem =>Model.Id)
+    </td>
+    <td>@Html.DisplayFor(modelitem=>Model.Name)</td>
+    <td>@Html.DisplayFor(modelitem=>Model.Salary)</td>
+    <td>@Html.DisplayFor(modelitem=>Model.IsPermanent)</td>
+</tr>
+

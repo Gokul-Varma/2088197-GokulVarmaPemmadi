@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "ITOrganizations";
+}
+
+
+
+<html>
+<head>
+    <title>ITOrganisation Page</title>
+</head>
+<body>
+   
+            <div>
+                <h1>Company Details</h1>
+                
+                <div class="row">
+                    <div class="col-md-4">
+
+                        @foreach (var e in Model)
+                        {
+                            if (e == "Amazon")
+                            {
+                                <p><b> <span> @e </span>  </b></p>
+                                <p><b>Amazon is the IT organization that has built its largest office at Hyderabad in 2019.</b></p>
+                            }
+                            else
+                            {
+                                <p> <span>@e</span> </p>
+                            }
+                        }
+
+                    </div>
+
+                </div>
+            </div>
+</body>
+</html>
+
